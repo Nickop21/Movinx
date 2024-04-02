@@ -1,0 +1,38 @@
+strict mode is responsible for two call it check that 1 response is similar with second one or not 
+just to double check
+
+
+steps to creatae store 
+
+1 create store 
+wrap app in provider which take store as a pro store={store}
+
+2 create slices  define name intial state reducres -> basically functio which take state action
+
+
+
+dispatch  reducer ko use krte hue store me value changes krta he
+
+//redux
+Redux toolkit ki notes
+1. Create Store - single source of truth
+it has configureStore
+introduce reducer
+
+2. Create Slice(functions) method(createSlice)
+Slice has name, initialState, reducers :{key: function}
+Access of two things (State, action)
+state = state value in the store
+action = action.payload 
+export individual functionality 
+export main source export
+
+3. Add Todo - Give values to State i.e Dispatch Courier  = use method useDispatch()
+ dispatch(addTodo())
+
+4. Take Values - useSelector((state) =>state.todos) state ka access chaiye
+variable me values lelo ek baar aagaie uske baad pure JS concept hai 
+
+/////////////////
+mportance of uses of two libraries:
+jab redux aaya tha to uske stepup me thoda jayada time lagta tha compare to contex api and debugging karne me v problem ja rhi thi. tab developers ne redux-toolkit introduce kiya jisme setUp or debugging easy ho gya kuchh redux functions ke dawara, isliye redux use karne ke liye ye dono libraries install karni jaruri hai.
