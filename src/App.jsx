@@ -18,7 +18,6 @@ const dispatch =useDispatch();
 const  {url}=useSelector((state)=>   //to use store val by desturing
   state.home       //store jis name se he
 )
-console.log(url);
 
   useEffect(()=>{
    fetchApiConfig()
@@ -28,9 +27,7 @@ console.log(url);
   const fetchApiConfig = () => {
    
    fetchDataFromApi("/configuration").then((res) => {
-      
-
-        const url = {
+        const url = { //storing data in home store 
             backdrop: res.images.secure_base_url + "original",
             poster: res.images.secure_base_url + "original",
             profile: res.images.secure_base_url + "original",

@@ -10,9 +10,7 @@ const useFetch = (url) => {
     setLoading("loading.....");
     setData(null);
     setError(null);
-    console.log(url);
     fetchDataFromApi(url).then((res) => {
-      console.log(res);
       setLoading(false)
       setData(res)
 
@@ -23,7 +21,8 @@ const useFetch = (url) => {
   }, [url])
 
   return (
-    data, loading, error
+
+    {data, loading, error}
   )
 }
 

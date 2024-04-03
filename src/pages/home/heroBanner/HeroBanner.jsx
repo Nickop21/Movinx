@@ -4,19 +4,22 @@ import { useSelector } from "react-redux";
 import "./style.scss"
 
 import useFetch from "../../../hooks/useFetch";
+import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
+import Img from "../../../components/lazyLoadingImage/Img";
 
 function HeroBanner() {
   const [background, setBackground] = useState("");
   const [query, setQuery] = useState("");
   const navigate = useNavigate();
   const { url } = useSelector((state) => state.home);
-  const { data, loading } = useFetch("/movie/upcoming");
+  const  {data,loading}  = useFetch("/movie/upcoming");
 
   useEffect(() => {
       const bg =
-          url.backdrop +
+          url.backdrop + //base url
           data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path;
       setBackground(bg);
+      console.log(data);
   }, [data]);
 
   const searchQueryHandler = (event) => {
