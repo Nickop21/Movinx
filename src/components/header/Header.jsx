@@ -28,7 +28,7 @@ function Header() {
 
 
   return (
-    <header className={`header ${mobileMenue ?"mobileView" : ""}`}>
+    <header className={`header ${mobileMenue ?"mobileView" : ""} ${show}`}>
       <ContentWrapper>
           <img src={logo} alt="" />
           <ul className='menuItems'>
