@@ -28,9 +28,22 @@
         justify-content: space-between;
     }
     .logo {
+        display: flex;
+        align-items: center;
+        gap: 5px;
         cursor: pointer;
         img {
-            height: 50px;
+            height: 45px;
+          
+        }
+        .logo-name{
+            background: linear-gradient(98.37deg, #f89e00 0.99%, #da2f68 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-size: 25px;
+            letter-spacing:normal;
+            font-weight: 900;
         }
     }
     .menuItems {
