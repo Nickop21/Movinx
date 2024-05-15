@@ -19,7 +19,6 @@ function HeroBanner() {
           url.backdrop + //base url
           data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path;
       setBackground(bg);
-      console.log(data);
   }, [data]);
 
   const searchQueryHandler = (event) => {
