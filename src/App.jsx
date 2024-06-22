@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getApiConfigration } from './store/homeslice';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/home/home';
-import Details from './pages/details/Details';
+import Details from './pages/details/details';
 import SearchResult from './pages/searchResult/searchResult';
 import Explore from './pages/explore/explore';
 import Pagenotfound from './pages/404/Pagenotfound';
